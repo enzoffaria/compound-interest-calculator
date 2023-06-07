@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de Investimentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Calculadora de Investimentos ;)</h1> <hr>
+    <section>
+        <div id="header">
+            <div id="bloco" class="especial">
+                <p class="subtitles">Quanto quer investir Mensalmente?</p> <hr>
+                <input class="number" type="number" name="txtaporte" id="txtaporte" placeholder="Apenas Números...">
+            </div>
+            <div id="bloco">
+                <p class="subtitles">Por quantos anos quer investir?</p> <hr>
+                <input class="number" type="number" name="txttempo" id="txttempo" placeholder="Apenas Números...">
+            </div> 
+            <div id="bloco">
+                <p class="subtitles">% Taxa de Rendimento Anual</p> <hr>
+                <input class="number" type="number" name="txttaxa" id="txttaxa" placeholder="Apenas Números...">
+            </div> 
+        </div> 
+        <div id="botoes">
+            <input id="calc" type="button" value="calcular" onclick="calcular()"> <br>
+            <input id="calc" type="button" value="limpar" onclick="limpar()"> <br>
+        </div> 
+
+    <div id="blocores">
+     <hr>
+        <div class="rescalc" id="soma" style="color:black; font-weight:600;">Valor total: </div> <hr>
+            <ul class="result">
+                <li class="line-result 1">
+                    <p> Lucro </p>
+                    <div class="rescalc" id="resultlucro" style="color:blueviolet;font-weight:600;">-</div>
+                </li>
+                <li class="line-result 2">
+                    <p> Taxa Imposto </p>
+                    <div class="rescalc" id="resultimposto" style="color: rgb(0, 162, 255);font-weight:600;">-</div>
+                </li>
+                <li class="line-result 3">
+                    <p> Valor Imposto </p> 
+                    <div class="rescalc" id="resultimpostoreal"style="color: rgb(255, 153, 0); font-weight:600;">-</div>
+                </li>
+            </ul>
+
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

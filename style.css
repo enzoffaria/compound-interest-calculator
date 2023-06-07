@@ -1,0 +1,175 @@
+body {
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    color:rgb(44, 44, 44);
+    font: normal 20px Poppins;
+    padding: 20px;
+}
+
+h1 {
+    color:black;
+}
+
+.number {
+width: 95%;
+height: 45px;
+border-radius: 25px;
+border: 2px solid tomato;
+box-sizing: border-box;
+padding: 10px;
+}
+
+p.subtitles {
+margin-bottom: 8px;
+font: 600 15px 'Poppins';
+}
+
+#parametros {
+width: 100%;
+display: flex;
+justify-content: flex-end;
+margin-top: -20px;
+align-items: center;
+}
+
+#parametros a {
+font: 600 12px "Poppins";
+color: tomato;
+display: flex;
+text-decoration: none;
+justify-content: flex-end;
+}
+
+.parametros:hover {
+font:600 12.4px 'Poppins';
+color: rgb(255, 74, 43);
+transition: 0.2s;
+}
+
+#bloco {
+background-color: white;
+width: 30%;
+box-sizing: border-box;
+border-radius: 25px;
+box-shadow: rgba(0,0,0,0.1) -5px 5px 10px 1px;
+padding: 20px;
+}
+
+section {
+margin-top: 30px;
+display: flex;
+gap: 25px;
+flex-wrap: wrap;
+}
+
+h5 {
+display: inline-flex;
+margin: 10px;
+}
+
+#blocores{
+background-color: white;
+width: 100%;
+box-sizing: border-box;
+border-radius: 25px;
+box-shadow: rgba(0,0,0,0.1) -5px 5px 10px 1px;
+padding: 20px;
+opacity: 1;
+}
+
+.rescalc {
+display: inline-flex;
+width: 100%;
+justify-content: end !important;
+}
+
+
+input#calc {
+    width: 45%;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: tomato;
+    font:600 15px 'Poppins';
+    color: white;
+    border: 2px solid rgb(255, 81, 50);
+}
+
+input#calc:hover {
+    background-color: rgb(255, 81, 50);
+}
+
+input#calc:nth-of-type(2) {
+    background-color: white;
+    color: black !important;
+}
+
+#header {
+    margin-top: -11px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#botoes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#pergunta {
+    opacity: 0;
+    margin-left: -240px
+}
+
+.todosparametros {
+    opacity: 0;
+    margin-bottom: -30px;
+}
+
+
+.line-result{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 200px) and (max-width: 550px) {
+    #bloco {
+        width: 100%;
+        margin-top: 20px;
+    } 
+
+#header {
+flex-wrap: wrap;
+}
+.rescalc {
+width: 100%;
+}
+
+input#calc {
+margin-left: 0px;
+margin-right: 0px;
+}
+.especial {
+margin-top: -8px !important;
+}
+}
